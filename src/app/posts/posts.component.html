@@ -1,0 +1,7 @@
+
+@for(post of posts; track post){
+    <div class="post">
+        <p>{{post.post}} - {{post.date | date: 'MM/dd/yy'}}</p>
+        <button (click)="deletePost(post.id)">Delete</button>
+    </div>
+}
